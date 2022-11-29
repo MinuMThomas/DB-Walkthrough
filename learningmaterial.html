@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+Models.py notes
+    <!-- from taskmanager import db
+
+
+class Category(db.Model):
+    # schema for the category model
+
+        # Within our Category table, let's add a new column of 'category_name', which will be set to a standard db.Column().
+        # This will be the type of 'string', with a maximum character count of 25, but you can
+        # make these larger or smaller if needed.
+        # also want to make sure each new Category being added to the database is unique, so we'll set that to True.
+        # Then, we also need to make sure it's not empty or blank, so by setting nullable=False this
+        # enforces that it's a required field.
+    id = db.Column(db.Integer, primary_key=True)
+    category_name = db.Column(db.String(25), unique=True, nullable=False)
+    tasks = db.relationship("Task", backref="category")
+
+
+    def __repr__(self):
+        # __repr__ to represent itself in the form of a string
+        return self.category_name -->
+
+</body>
+</html>
